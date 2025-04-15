@@ -1,9 +1,9 @@
 
 # 🧮 .NET MAUI Calculator App
 
-Welcome to the **.NET MAUI Calculator App** — a clean, cross-platform calculator built using [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/). This project is designed to help beginners learn how to build responsive and interactive mobile/desktop apps using C# and XAML.
+Welcome to the **.NET MAUI Calculator App** — a clean, cross-platform calculator built using [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/). This project is designed to help beginners learn how to build responsive and interactive desktop apps using C# and XAML.
 
-> ✅ Works on **Windows**, **Android**, **iOS**, and **macOS**  
+> ✅ Works on **Windows**
 > 🎥 (#)
 
 ---
