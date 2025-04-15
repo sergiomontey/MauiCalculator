@@ -1,2 +1,27 @@
-# MauiCalculator
-This project teaches:  XAML layout techniques using Grid  Handling user input in C#  Structuring logic for UI state and calculations  Building for multiple platforms with .NET MAUI
+
+# 🧮 .NET MAUI Calculator App
+
+Welcome to the **.NET MAUI Calculator App** — a clean, cross-platform calculator built using [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/). This project is designed to help beginners learn how to build responsive and interactive mobile/desktop apps using C# and XAML.
+
+> ✅ Works on **Windows**, **Android**, **iOS**, and **macOS**  
+> 🎥 (#)
+
+---
+
+## ✨ Features
+
+- Basic operations: `+`, `-`, `×`, `÷`
+- Responsive UI using `Grid` and `StackLayout`
+- Error handling (e.g., divide by zero)
+- Cross-platform using .NET MAUI
+- Great for tutorials, courses, and beginner learning
+
+---
+
+## 🧱 Project Structure
+
+```plaintext
+MauiCalculator/
+├── MainPage.xaml         # UI layout (buttons, label display)
+└── MainPage.xaml.cs      # Logic for input, operators, and result
+
