@@ -1,0 +1,68 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCalculator.MainPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Spacing="10" Padding="20">
+        
+        <!-- Display Label -->
+        <Label x:Name="ResultLabel" 
+               Text="0" 
+               FontSize="36" 
+               HorizontalOptions="End" />
+
+        <!-- Buttons Grid -->
+        <Grid RowSpacing="10" ColumnSpacing="10">
+            <!-- NOW 6 Rows (Added 1 for advanced functions) -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Row 0: Advanced Functions -->
+            <Button Text="√" Grid.Row="0" Grid.Column="0" Clicked="OnAdvancedFunctionClicked"/>
+            <Button Text="x²" Grid.Row="0" Grid.Column="1" Clicked="OnAdvancedFunctionClicked"/>
+            <Button Text="+/-" Grid.Row="0" Grid.Column="2" Clicked="OnAdvancedFunctionClicked"/>
+            <Button Text="%" Grid.Row="0" Grid.Column="3" Clicked="OnAdvancedFunctionClicked"/>
+
+            <!-- Row 1: Normal Buttons (Shifted Down) -->
+            <Button Text="7" Grid.Row="1" Grid.Column="0" Clicked="OnButtonClicked"/>
+            <Button Text="8" Grid.Row="1" Grid.Column="1" Clicked="OnButtonClicked"/>
+            <Button Text="9" Grid.Row="1" Grid.Column="2" Clicked="OnButtonClicked"/>
+            <Button Text="/" Grid.Row="1" Grid.Column="3" Clicked="OnOperatorClicked"/>
+
+            <!-- Row 2 -->
+            <Button Text="4" Grid.Row="2" Grid.Column="0" Clicked="OnButtonClicked"/>
+            <Button Text="5" Grid.Row="2" Grid.Column="1" Clicked="OnButtonClicked"/>
+            <Button Text="6" Grid.Row="2" Grid.Column="2" Clicked="OnButtonClicked"/>
+            <Button Text="*" Grid.Row="2" Grid.Column="3" Clicked="OnOperatorClicked"/>
+
+            <!-- Row 3 -->
+            <Button Text="1" Grid.Row="3" Grid.Column="0" Clicked="OnButtonClicked"/>
+            <Button Text="2" Grid.Row="3" Grid.Column="1" Clicked="OnButtonClicked"/>
+            <Button Text="3" Grid.Row="3" Grid.Column="2" Clicked="OnButtonClicked"/>
+            <Button Text="-" Grid.Row="3" Grid.Column="3" Clicked="OnOperatorClicked"/>
+
+            <!-- Row 4 -->
+            <Button Text="0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Clicked="OnButtonClicked"/>
+            <Button Text="." Grid.Row="4" Grid.Column="2" Clicked="OnButtonClicked"/>
+            <Button Text="+" Grid.Row="4" Grid.Column="3" Clicked="OnOperatorClicked"/>
+
+            <!-- Row 5 -->
+            <Button Text="C" Grid.Row="5" Grid.Column="0" Clicked="OnClearClicked"/>
+            <Button Text="=" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Clicked="OnCalculateClicked"/>
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
