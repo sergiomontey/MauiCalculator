@@ -20,7 +20,7 @@ public partial class App : Application
 
             if (appWindow is not null)
             {
-                appWindow.MoveAndResize(new Windows.Graphics.RectInt32(0, 0, 450, 1850));
+                appWindow.MoveAndResize(new Windows.Graphics.RectInt32(0, 0, 850, 1850));
             }
 #endif
         });
