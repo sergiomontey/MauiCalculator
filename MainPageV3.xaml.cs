@@ -175,6 +175,10 @@ public partial class MainPage : ContentPage
         ResultLabel.Text = "Error";
         currentEntry = "";
     }
+    private void OnClearHistoryClicked(object sender, EventArgs e)
+    {
+        historyList.Clear();
+    }
 
     private void AddToHistory(string record)
     {
